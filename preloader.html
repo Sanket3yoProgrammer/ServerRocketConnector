@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+        }
+        .preloader {
+            width: 200px; /* Increased width */
+            height: 200px; /* Increased height */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://animaticons.co/animat-rocket-color.gif" alt="Loading..." class="preloader">
+    
+    <script>
+        setTimeout(function() {
+            window.location.href = "index.html";
+        }, 3000); // 3 seconds delay
+    </script>
+</body>
+</html>
